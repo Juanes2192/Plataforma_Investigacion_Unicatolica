@@ -18,7 +18,11 @@ export function LoginGlobal() {
       if (formValues.email === 'usuario@gmail.com' && formValues.password === 'usuario') {
         console.log('Login ok');
         console.log(formValues);
-        navigate('/HomeAdmin'); // Redirección a la ruta '/home'
+        navigate('/HomeAdmin'); // Redirección a la ruta '/HomeAdmin'
+      } else if (formValues.email === 'ponente@gmail.com' && formValues.password === 'ponente') {
+        console.log('Login ok as Ponente');
+        console.log(formValues);
+        navigate('/ProyectoPonente'); // Redirección a la ruta '/ProyectoPonente'
       } else {
         console.log('Usuario o contraseña incorrectos');
       }

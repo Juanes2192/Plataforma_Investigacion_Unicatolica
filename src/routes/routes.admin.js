@@ -1,7 +1,6 @@
 import {GlobalLayout} from "../layouts"
 import { LoginGlobal } from "../pages";
-import {HomeAdmin} from "../pages/Admin"
-import {nosotros} from "../pages/nosotros";
+import {HomeAdmin,CrearProyecto,ListadoProyecto} from "../pages/Admin";
 
 
 const routesAdmin=[
@@ -13,7 +12,18 @@ const routesAdmin=[
     {
         path:"HomeAdmin",
         layout: GlobalLayout,
-        component: HomeAdmin
+        component: HomeAdmin,
+    },
+    {
+        path:"/CrearProyecto",
+        layout: GlobalLayout,
+        component: CrearProyecto,
+    },
+    {
+        path:"/ListadoProyecto",
+        layout: GlobalLayout,
+        component: ListadoProyecto,
+
     }
 ];
 
